@@ -1,0 +1,24 @@
+=head1 NAME
+
+Pod::Maker::Format
+
+=cut
+
+
+=head1 ATTRIBUTES
+
+=head2 REQUIRED
+
+none
+
+=cut
+
+=head2 OPTIONAL
+
+none
+
+=cut
+
+
+=head1 METHODS
+

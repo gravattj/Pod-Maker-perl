@@ -1,0 +1,93 @@
+=head1 NAME
+
+Pod::Maker::Element::Comment
+
+=cut
+
+=head1 INHERITS FROM
+
+Pod::Maker::Element
+
+=cut
+
+
+=head1 ATTRIBUTES
+
+=head2 REQUIRED
+
+none
+
+=cut
+
+=head2 OPTIONAL
+
+none
+
+=cut
+
+
+=head1 METHODS
+
+=head2 append_string
+
+
+=head3 parameters
+
+  Str $str = ''
+
+=cut
+
+=head2 get_header
+
+
+=head3 parameters
+
+none
+
+=cut
+
+=head2 get_pod_paragraph
+
+
+=head3 parameters
+
+none
+
+=cut
+
+=head2 get_string
+
+
+=head3 parameters
+
+none
+
+=cut
+
+=head2 is_blank
+
+
+=head3 parameters
+
+none
+
+=cut
+
+=head2 is_header
+
+
+=head3 parameters
+
+none
+
+=cut
+
+=head2 is_header_line
+
+
+=head3 parameters
+
+  Str $str!
+
+=cut
+

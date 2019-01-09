@@ -1,0 +1,61 @@
+=head1 NAME
+
+Pod::Maker::Element::Method
+
+=cut
+
+=head1 INHERITS FROM
+
+Pod::Maker::Element
+
+=cut
+
+
+=head1 ATTRIBUTES
+
+
+=head2 REQUIRED
+
+=head3 classname
+
+  is:   ro 
+  isa:  Str
+
+=cut
+
+=head3 name
+
+  is:   ro 
+  isa:  Str
+
+=cut
+
+
+=head2 OPTIONAL
+
+=head3 comment
+
+  is:   rw                                
+  isa:  Pod::Maker::Element::Comment|Undef
+
+=cut
+
+=head3 signature
+
+  is:   rw 
+  isa:  Str
+
+=cut
+
+
+=head1 METHODS
+
+=head2 get_pod_paragraph
+
+
+=head3 parameters
+
+  Int $depth = 2
+
+=cut
+

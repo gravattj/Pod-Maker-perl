@@ -1,0 +1,154 @@
+=head1 NAME
+
+Pod::Maker
+
+=cut
+
+=head1 DESCRIPTION
+
+
+Automatic pod generator using class introspection and simple comment rules.
+ You may want to use this just to generate your initial pod or as a basis
+for all your pod.  If you have no comments in the code, this still tries to 
+determine the NAME, ATTRIBUTES, and METHODS.
+
+The ground rules:
+
+  * Header blocks are an isolated comment with one of these keywords:
+
+    * NAME
+    * DESCRIPTION
+    * SYNOPSIS
+
+    * example:
+      #
+      # NAME
+      #
+      # Foo::Bar
+      #
+
+  * Header blocks must have at least one blank line between them.
+
+  * Method comments are directly above method names.  In order to qualify as
+    a method comment, it must be directly above the method and contigous.
+    Additionally, it can't qualify as a header.
+
+    * example:
+      #
+      # Some text you want to include.
+      #
+      #   This is a code block.
+      #
+
+=cut
+
+=head1 SYNOPSIS
+
+
+  my $a = Pod::Maker->new(filename => $filename);
+  $a->parse;
+  $a->write_to_file();
+
+  -or-
+
+  my $pod_string = $a->parse;
+
+=cut
+
+=head1 INHERITS FROM
+
+Moose::Object
+
+=cut
+
+
+=head1 ATTRIBUTES
+
+
+=head2 REQUIRED
+
+=head3 filename
+
+  is:   ro 
+  isa:  Str
+
+=cut
+
+
+=head2 OPTIONAL
+
+=head3 attributes
+
+  is:   rw                                      
+  isa:  ArrayRef[Pod::Maker::Element::Attribute]
+
+=cut
+
+=head3 classname
+
+  is:   rw 
+  isa:  Str
+
+=cut
+
+=head3 comments
+
+  is:   rw                                    
+  isa:  ArrayRef[Pod::Maker::Element::Comment]
+
+=cut
+
+=head3 methods
+
+  is:   rw                                   
+  isa:  ArrayRef[Pod::Maker::Element::Method]
+
+=cut
+
+=head3 text
+
+  is:   rw      
+  isa:  ArrayRef
+
+=cut
+
+
+=head1 METHODS
+
+=head2 generate_pod
+
+
+=head3 parameters
+
+none
+
+=cut
+
+=head2 parse
+
+
+This method parses the perl file.
+
+=head3 usage
+
+  $auto->parse;
+
+
+=head3 parameters
+
+none
+
+=cut
+
+=head2 write_to_file
+
+
+This method writes the previously parsed .pm to the corresponding .pod file.
+
+
+=head3 parameters
+
+none
+
+=cut
+

@@ -1,0 +1,68 @@
+=head1 NAME
+
+Pod::Maker::Element
+
+=cut
+
+=head1 INHERITS FROM
+
+Moose::Object
+
+=cut
+
+
+=head1 ATTRIBUTES
+
+=head2 REQUIRED
+
+none
+
+=cut
+
+
+=head2 OPTIONAL
+
+=head3 name
+
+  is:   rw 
+  isa:  Str
+
+=cut
+
+=head3 type
+
+  is:   rw 
+  isa:  Str
+
+=cut
+
+
+=head1 METHODS
+
+=head2 is_attribute
+
+
+=head3 parameters
+
+none
+
+=cut
+
+=head2 is_comment
+
+
+=head3 parameters
+
+none
+
+=cut
+
+=head2 is_method
+
+
+=head3 parameters
+
+none
+
+=cut
+
